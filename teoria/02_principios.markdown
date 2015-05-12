@@ -24,7 +24,7 @@ Apartado: capaz en algún momento los desarrolladores se enloquecieron con la he
 
 `Favorecer a la composición vs la herencia`
 
-Esto ha probado ser más flexible y resultar en un diseño menos enquilombado.
+_Esto ha probado ser más flexible y resultar en un diseño menos enquilombado._
 
 ### Herencia vs. Composición
 El libro hace la distinción entre reutilización de caja blanca y de caja negra. Habla de romper el encapsulamiento al conocer la implementación.
@@ -40,9 +40,9 @@ La clase ColaDoble no podría usar un objeto Cola porque debe agregar funcionali
 
 La clase Pila podría usar una ColaDoble y sólo utilizar los métodos que le sirven, reusando código mediante la composición. Heredar de ColaDoble no sería lo mejor ya que debería renunciar a funcionalidad, más allá de que Pila no "es una" ColaDoble. Igual me parece medio chancho que Pila use una ColaDoble, pero bueno no viene al caso.
 
-**Recordar: OrderedCollection, Cola, ColaDoble, Pila.**
+_Recordar: OrderedCollection, Cola, ColaDoble, Pila._
 
 ### Polimorfismo vs. Composición
-Además de los factores de ~heredar todo~ contra ~usar~, se debe tener en cuenta otra variable muy importante: el dinamismo de la clase.
+Además de los factores de _heredar todo_ contra _usar_, se debe tener en cuenta otra variable muy importante: el dinamismo de la clase.
 
 Si la subclase nunca va a mutar de clase, la situación se puede resolver mediante una herencia estática y polimorfismo. Si va a mutar, debe usarse composición.
