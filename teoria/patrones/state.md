@@ -37,9 +37,17 @@ Si los estados no son tan dinámicos y guardan cierta información, puede adecua
 
 ### Estructura, objetos, responsabilidades y colaboraciones
 
-##### Abstracta
+#### *Abstracta*
 ![](./uml/state_abstracto.png)
+###### Objetos participantes
+- Contexto: objeto con el que interactúan los clientes. Es el que posee diferentes estados. Mantiene una variable estado en la que delega todos aquellos métodos dependientes del estado.
+- Estado abstracto: clase abstracta que define la interfaz obligatoria para todos los estados.
+- Estados concretos: subclases concretas que implementan el comportamiento para la interfaz definida para los estados.
 
+###### Funcionamiento
+El *Contexto* es un objeto que posee estados. Conoce al estado en que se encuentra mediante una variable de instancia, *estado*. Su variable de instancia es de un tipo que entiende todas aquellos mensajes pertinentes al estado, o sea aquellos cuya implementación depende del estado actual. Cada vez que al *Contexto* le llega un mensaje de estos, delega la responsabilidad en el *estado*, que lleva a cabo las acciones correspondientes.
 
-##### Ejemplo
+La variable *estado* será subclase concreta de una clase abstracta diseñada para definir la interfaz de los estados.
+
+#### *Ejemplo*
 ![](./uml/state_ejemplo.png)
