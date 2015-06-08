@@ -35,6 +35,6 @@ Qué tan útil es el diseño para el cambio en el desarrollo de las aplicaciones
 
 El desacoplamiento (de clases) y la independencia (de plataformas, operaciones, algoritmos e implementación/representación) permiten la reutilización de los objetos en diferentes contextos, una mayor extensibilidad del modelo, portabilidad, y una mejor ledibilidad.
 
-#### Toolkits / librerías
+##### Toolkits / librerías
 
-#### Frameworks
+##### Frameworks

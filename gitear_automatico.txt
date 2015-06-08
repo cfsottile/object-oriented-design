@@ -1,0 +1,1 @@
+git status | grep modified | tr -s t  , | cut -d, -f3
