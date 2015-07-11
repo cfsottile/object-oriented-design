@@ -13,7 +13,7 @@ Bien, todo muy rico. Pero hay una cosa que no queda clara. Si se tiene, como en 
 - Se quiere extender una clase pero la herencia es inviable.
 
 ### Estructura - Participantes
-![](uml/decorator_abstracto.svg)
+![](./uml/decorator_abstracto.svg)
 
 - **Componente**: clase abstracta que determina la interfaz de las clases que podrán ser decoradas.
 - **ComponenteConcreto**: clases concretas que podrán ser decoradas.
