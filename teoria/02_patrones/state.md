@@ -8,6 +8,10 @@ En el paradigma procedural, esto se solía solventar con una variable de instanc
 
 *¿Y cuál es el problema con eso?* Extensibilidad y mantenimiento. Dicha sentencia condicional suele encontrarse en muchos lugares en el código, y los cambios deben verse reflejados en todos ellos.
 
+### Aplicabilidad
+- El comportamiento de un objeto depende de su estado, y este cambia en tiempo de ejecución.
+- Los métodos tienen quilombos condicionales evaluando el estado
+
 ### ¿Qué aporta a mi modelo?
 
 - Capacidad de agregar estados sin mayor esfuerzo.

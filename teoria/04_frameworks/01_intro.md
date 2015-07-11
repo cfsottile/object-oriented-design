@@ -1,6 +1,6 @@
 ### Qué son los frameworks?
 
-Son aplicaciones **reusables**. Resuelven un tipo de situación, siendo el objetivo que los usuarios (desarrolladores en este caso) lo apliquen en situaciones concretas, implementando sólo las partes que son pertinentes a estas.
+Son aplicaciones semi-completas **reusables**. Resuelven un tipo de situación, siendo el objetivo que los usuarios (desarrolladores en este caso) lo apliquen en situaciones concretas, implementando sólo las partes que son pertinentes a estas.
 
 O sea, los frameworks son aplicaciones incompletas que los usuarios transforman en completas mediante la implementación de aquellas partes incompletas.
 
