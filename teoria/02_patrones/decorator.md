@@ -35,6 +35,9 @@ Decorador redirige todos los mensajes al Componente; DecoradorConcreto añade fu
 3. Mantener la clase componente ligera, lo que permitirá mantener las clases decoradoras ligeras. Implementar una parte de la funcionalidad en las subclases. **Sí, re piola, pero cómo uso la funcionalidad de las subclases si yo conozco a la superclase**.
 4. Este punto es más una aclaración que otra cosa. *Cambiar la piel de un objeto en vez de las tripas*. Lo que estamos haciendo acá es agregar un envoltorio transparente de funcionalidad al objeto componente (por eso la analogía con la piel), ya que mantiene su funcionalidad original pero agrega nueva, y además nosotros no nos percatamos de que estamos tratando con un objeto diferente.
 
+### Pequeño resumen
+Tengo un objeto al que le quiero agregar funcionalidad dinámicamente y quizá también de forma transparente. Armo una serie de clases que le permitirán llevar a cabo su funcionalidad correspondiente y, además, agregarán la que deseo agregar. Para esto los objetos deben entender los mismos mensajes, por lo que serán hijos de una superclase abstracta que definirá la interfaz para ambos.
+
 ### Dudas
 1. En el caso de tener un decorator con mensajes propios, como podría ser #desplazar:x, deberíamos romper con la premisa de la transparencia. ¿Esto sería correcto?
 2. *Según el lugar, conocer al componente como un decorator o como el objeto original.* Al final de la sección de *Código de ejemplo* habla de interactuar con los objetos componentes directamente o con los decoradores según sea conveniente, desde diferentes lugares del código. Bueno en realidad el ejemplo que da es bastante explicativo: un objeto texto con el cual seguiremos interactuando de forma directa, pero que le daremos a un objeto ventana envuelto en decoradores, ya que así es como queremos que lo utilice la ventana. ¿Así sería la cuestión?
